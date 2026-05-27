@@ -28,16 +28,27 @@ h1, h2, h3, h4, h5 {
     margin-right: 5px;
 }
 
-.nav-link {
+#navbar-principal .nav-link {
     color: #f5f5f5 !important;
     padding: 8px 15px !important;
     transition: color 0.3s;
 }
 
-.nav-link:hover {
+#navbar-principal .nav-link:hover {
+    color: #c9a961 !important;
+}
+.nav-tabs .nav-link {
+    color: #333 !important;
+}
+
+.nav-tabs .nav-link:hover {
     color: #c9a961 !important;
 }
 
+.nav-tabs .nav-link.active {
+    color: #c9a961 !important;
+    font-weight: 600;
+}
 .btn-rezerva {
     background-color: #c9a961;
     color: #1a1a1a !important;
