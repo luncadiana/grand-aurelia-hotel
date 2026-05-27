@@ -1,0 +1,282 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    padding-top: 70px; /* Spatiu pentru navbar-ul fixat sus */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* ============================================================
+   bara de navigare de sus
+   ============================================================ */
+#navbar-principal {
+    background-color: rgba(40, 25, 15, 0.95);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #c9a961 !important;
+}
+
+.navbar-brand i {
+    margin-right: 5px;
+}
+
+.nav-link {
+    color: #f5f5f5 !important;
+    padding: 8px 15px !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #c9a961 !important;
+}
+
+.btn-rezerva {
+    background-color: #c9a961;
+    color: #1a1a1a !important;
+    border-radius: 25px;
+    padding: 8px 20px !important;
+    margin-left: 10px;
+}
+
+.btn-rezerva:hover {
+    background-color: #b89548;
+    color: #fff !important;
+}
+
+/* ============================================================
+   banner principal
+   ============================================================ */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.btn-aurelia {
+    background-color: #c9a961;
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 35px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.btn-aurelia:hover {
+    background-color: #b89548;
+    color: white;
+}
+
+/* ============================================================
+   sectiuni generale
+   ============================================================ */
+.sectiune {
+    padding: 80px 0;
+}
+
+.titlu-sectiune {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titlu-sectiune h2 {
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
+.titlu-sectiune .linie {
+    width: 80px;
+    height: 3px;
+    background-color: #c9a961;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   carduri de camere
+   ============================================================ */
+.card-camera {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card-camera:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-camera img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-camera .pret {
+    font-size: 1.5rem;
+    color: #c9a961;
+    font-weight: 700;
+}
+
+.card-camera .pret span {
+    font-size: 0.9rem;
+    color: #999;
+    font-weight: 400;
+}
+
+.card-camera .capacitate {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* ============================================================
+   formulare (login, inregistrare ...)
+   ============================================================ */
+.container-formular {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container-formular h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c2c2c;
+}
+
+.form-control:focus {
+    border-color: #c9a961;
+    box-shadow: 0 0 0 0.25rem rgba(201, 169, 97, 0.25);
+}
+
+.btn-primary {
+    background-color: #c9a961;
+    border-color: #c9a961;
+}
+
+.btn-primary:hover {
+    background-color: #b89548;
+    border-color: #b89548;
+}
+
+/* ============================================================
+   dashboard (admin si lucrator)
+   ============================================================ */
+.dashboard-header {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    color: white;
+}
+
+.tabel-modern {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tabel-modern thead {
+    background-color: #c9a961;
+    color: white;
+}
+
+.tabel-modern th {
+    padding: 15px;
+    font-weight: 600;
+}
+
+.tabel-modern td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* Badge-uri pentru status */
+.badge-status {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge-in_asteptare { background-color: #f0ad4e; color: white; }
+.badge-confirmata { background-color: #5bc0de; color: white; }
+.badge-check_in { background-color: #5cb85c; color: white; }
+.badge-check_out { background-color: #777; color: white; }
+.badge-anulata { background-color: #d9534f; color: white; }
+.badge-disponibila { background-color: #5cb85c; color: white; }
+.badge-curatenie { background-color: #f0ad4e; color: white; }
+
+/* ============================================================
+   alerte (mesaje de succes / eroare)
+   ============================================================ */
+.alert {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* ============================================================
+   footer
+   ============================================================ */
+.site-footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 50px 0 20px;
+    margin-top: 80px;
+}
+
+.site-footer h5 {
+    color: #c9a961;
+    margin-bottom: 20px;
+}
+
+.site-footer i {
+    color: #c9a961;
+    margin-right: 8px;
+}
+
+/* ============================================================
+   responsiveness
+   ============================================================ */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .sectiune {
+        padding: 50px 0;
+    }
+}
